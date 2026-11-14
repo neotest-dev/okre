@@ -1,0 +1,12 @@
+---
+interface Props {
+  class?: string;
+}
+const { class: className } = Astro.props;
+---
+
+<!-- Real logo icon used as a mask: color comes from the text color (bg-current). -->
+<span
+  class:list={["block aspect-[900/630] bg-current", className]}
+  style="-webkit-mask: url(/late-mark.png) center / contain no-repeat; mask: url(/late-mark.png) center / contain no-repeat;"
+  aria-hidden="true"></span>

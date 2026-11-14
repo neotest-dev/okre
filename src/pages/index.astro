@@ -1,0 +1,189 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MenuSection from "../components/MenuSection.astro";
+import LogoIcon from "../components/LogoIcon.astro";
+import { menu, bookPages } from "../data/menu";
+
+const byId = Object.fromEntries(menu.map((c) => [c.id, c]));
+const total = bookPages.length + 2; // cover + menu pages + back cover
+const jumpLinks = bookPages.flatMap((ids, page) =>
+  ids.map((id) => ({ id, title: byId[id].title, leaf: page + 1 })),
+);
+---
+
+<Layout>
+  <div class="mx-auto flex h-dvh max-w-md flex-col">
+    <div
+      id="book"
+      data-total={total}
+      class="relative m-2 flex-1 [perspective:1100px] select-none"
+    >
+      <!-- Stacked page edges -->
+      <div class="pointer-events-none absolute inset-y-1.5 -right-1.5 left-2 -z-10 rounded-r-xl bg-[#e3d6c3] shadow-md"></div>
+      <div class="pointer-events-none absolute inset-y-3 -right-3 left-4 -z-20 rounded-r-xl bg-[#cdbea8] shadow-md"></div>
+      <!-- Cover -->
+      <div class="leaf absolute inset-0 origin-left transform-3d group transition-transform duration-[900ms] ease-[cubic-bezier(.645,.045,.355,1)] data-flipped:-rotate-y-180 data-flipped:pointer-events-none">
+        <div class="absolute inset-0 flex flex-col items-center justify-center rounded-r-xl bg-[#ebe1d1] p-8 text-center shadow-2xl backface-hidden">
+          <img src="/logo.png" alt="Okre - Arte & Sabor" class="w-full max-w-xs" />
+          <p class="mt-16 animate-pulse text-xs font-medium text-stone-500">Desliza o toca para abrir →</p>
+          <div class="absolute bottom-28"><a href="https://maps.app.goo.gl/7y1a1F3rHUNb7xSB9" target="_blank" rel="noopener noreferrer" aria-label="Abrir ubicación en Google Maps" class="flex items-center gap-2 rounded-full bg-[#873620] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-[#ebe1d1] shadow-md transition-transform active:scale-95"><svg viewBox="0 0 24 24" class="size-4" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Av. La Marina #530 · Moche</a></div>
+        </div>
+        <div class="absolute inset-0 pointer-events-none rotate-y-180 rounded-l-xl bg-[#8f7d6d] backface-hidden"></div>
+      </div>
+
+      <!-- Menu pages -->
+      {
+        bookPages.map((ids, i) => (
+          <div class="leaf absolute inset-0 origin-left transform-3d group transition-transform duration-[900ms] ease-[cubic-bezier(.645,.045,.355,1)] data-flipped:-rotate-y-180 data-flipped:pointer-events-none">
+            <div class="absolute inset-0 overflow-hidden rounded-r-xl bg-[#ad9a89] text-stone-900 shadow-xl backface-hidden">
+              <LogoIcon class="pointer-events-none absolute left-1/2 top-1/2 w-[80%] -translate-x-1/2 -translate-y-1/2 text-[#873620] opacity-[0.10]" />
+              <div class="h-full touch-pan-y overflow-y-auto overscroll-contain rounded-r-xl px-5 pb-28 pt-6 [scrollbar-width:none]">
+                {ids.map((id) => <MenuSection category={byId[id]} />)}
+              </div>
+              <div class="pointer-events-none absolute inset-y-0 left-0 w-7 rounded-l-sm bg-gradient-to-r from-black/45 via-black/10 to-transparent" /><div class="pointer-events-none absolute inset-0 rounded-r-xl bg-black opacity-0 transition-opacity duration-[900ms] group-data-flipped:opacity-40" />
+            </div>
+            <div class="absolute inset-0 pointer-events-none rotate-y-180 rounded-l-xl bg-[#9d8b7a] bg-gradient-to-l from-black/40 via-black/5 to-transparent backface-hidden" />
+          </div>
+        ))
+      }
+
+      <!-- Back cover -->
+      <div class="leaf absolute inset-0 flex origin-left flex-col items-center justify-center rounded-r-xl bg-[#ebe1d1] p-8 text-center shadow-2xl">
+        <img src="/logo.png" alt="Okre - Arte & Sabor" class="w-full max-w-xs" />
+        <p class="mt-16 font-display text-xl font-semibold uppercase tracking-[0.25em] text-stone-600">¡Buen provecho!</p>
+        <div class="absolute bottom-28 flex flex-col items-center gap-3 px-8">
+          <p class="text-center text-sm italic text-stone-600">
+            “Donde hay buena comida, hay una obra de arte”<br />— Emerzon Vac —
+          </p>
+          <a href="https://maps.app.goo.gl/7y1a1F3rHUNb7xSB9" target="_blank" rel="noopener noreferrer" aria-label="Abrir ubicación en Google Maps" class="flex items-center gap-2 rounded-full bg-[#873620] px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-[#ebe1d1] shadow-md transition-transform active:scale-95"><svg viewBox="0 0 24 24" class="size-4" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Av. La Marina #530 · Moche</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating menu button -->
+    <button
+      id="menu-open"
+      aria-label="Abrir menú de categorías"
+      class="fixed bottom-[max(1.25rem,env(safe-area-inset-bottom))] left-1/2 z-[200] flex -translate-x-1/2 items-center gap-2.5 rounded-full bg-[#873620] py-3 pl-5 pr-6 font-display text-base font-semibold uppercase tracking-widest text-[#ebe1d1] shadow-[0_8px_24px_rgba(0,0,0,0.45)] ring-2 ring-[#ebe1d1]/70 transition-transform active:scale-95"
+    >
+      <svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+        <path d="M4 7h16M4 12h16M4 17h10"></path>
+      </svg>
+      Menú
+    </button>
+
+    <!-- Floating category modal -->
+    <div
+      id="menu-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Categorías"
+      class="group pointer-events-none fixed inset-0 z-[300] flex items-end justify-center p-4 pb-[max(5.5rem,calc(env(safe-area-inset-bottom)+4.5rem))] opacity-0 transition-opacity duration-300 data-open:pointer-events-auto data-open:opacity-100"
+    >
+      <div id="menu-backdrop" class="absolute inset-0 bg-black/55 backdrop-blur-[2px]"></div>
+      <div class="relative w-full max-w-sm translate-y-6 scale-95 rounded-3xl bg-[#ebe1d1] p-5 shadow-[0_20px_60px_rgba(0,0,0,0.55)] transition-transform duration-300 group-data-open:translate-y-0 group-data-open:scale-100">
+        <div class="mb-4 flex items-center justify-between">
+          <h2 class="font-display text-xl font-semibold uppercase tracking-widest text-[#873620]">Ir a</h2>
+          <button id="menu-close" aria-label="Cerrar" class="grid size-9 place-items-center rounded-full bg-[#873620]/10 text-[#873620] active:bg-[#873620] active:text-[#ebe1d1]">
+            <svg viewBox="0 0 24 24" class="size-4" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+          </button>
+        </div>
+        <ul class="grid grid-cols-2 gap-2.5">
+          {
+            jumpLinks.map((l) => (
+              <li>
+                <button
+                  data-leaf={l.leaf}
+                  data-target={l.id}
+                  class="jump w-full rounded-2xl bg-[#873620]/10 px-3 py-3.5 font-display text-sm font-semibold uppercase tracking-wide text-[#873620] transition active:scale-95 active:bg-[#873620] active:text-[#ebe1d1]"
+                >
+                  {l.title}
+                </button>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</Layout>
+
+<script>
+  const book = document.getElementById("book")!;
+  const leaves = Array.from(book.querySelectorAll<HTMLElement>(".leaf"));
+  const total = leaves.length;
+  let current = 0; // number of flipped leaves
+  const FLIP_MS = 900;
+
+  const restingZ = (i: number) => (i < current ? i : total - i);
+
+  const render = () => {
+    leaves.forEach((leaf, i) => {
+      if (i < current) leaf.setAttribute("data-flipped", "");
+      else leaf.removeAttribute("data-flipped");
+    });
+  };
+
+  const flipTo = (target: number) => {
+    if (target < 0 || target > total - 1 || target === current) return;
+    const forward = target > current;
+    const [from, to] = forward ? [current, target] : [target, current];
+    for (let i = from; i < to; i++) {
+      // keep moving leaves above the rest, in correct order, while flipping
+      leaves[i].style.zIndex = String(100 + (forward ? i : total - i));
+    }
+    current = target;
+    render();
+    setTimeout(() => {
+      leaves.forEach((leaf, i) => (leaf.style.zIndex = String(restingZ(i))));
+    }, FLIP_MS);
+  };
+  const go = (direction: 1 | -1) => flipTo(current + direction);
+
+  const modal = document.getElementById("menu-modal")!;
+  const setModal = (open: boolean) => {
+    if (open) modal.setAttribute("data-open", "");
+    else modal.removeAttribute("data-open");
+  };
+  document.getElementById("menu-close")!.addEventListener("click", () => setModal(false));
+  document.getElementById("menu-open")!.addEventListener("click", () => setModal(true));
+  document.getElementById("menu-backdrop")!.addEventListener("click", () => setModal(false));
+  document.querySelectorAll<HTMLButtonElement>(".jump").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      const leaf = leaves[Number(btn.dataset.leaf)];
+      const section = leaf.querySelector<HTMLElement>(`#${btn.dataset.target}`);
+      const scroller = section?.parentElement;
+      scroller?.scrollTo({ top: Math.max((section?.offsetTop ?? 0) - 16, 0) });
+      setModal(false);
+      flipTo(Number(btn.dataset.leaf));
+    }),
+  );
+
+  leaves.forEach((leaf, i) => (leaf.style.zIndex = String(restingZ(i))));
+  render();
+
+  // Tap the right 70% to go forward, the left 30% to go back.
+  book.addEventListener("click", (e) => {
+    if ((e.target as HTMLElement).closest("a, button")) return;
+    const rect = book.getBoundingClientRect();
+    go(e.clientX - rect.left > rect.width * 0.3 ? 1 : -1);
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") go(1);
+    if (e.key === "ArrowLeft") go(-1);
+    if (e.key === "Escape") setModal(false);
+  });
+
+  let startX = 0;
+  let startY = 0;
+  book.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+  }, { passive: true });
+  book.addEventListener("touchend", (e) => {
+    const dx = e.changedTouches[0].clientX - startX;
+    const dy = e.changedTouches[0].clientY - startY;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) go(dx < 0 ? 1 : -1);
+  }, { passive: true });
+</script>
