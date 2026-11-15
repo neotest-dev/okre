@@ -17,19 +17,44 @@ const v = (label: string, price: number) => ({ label, price });
 
 export const menu: MenuCategory[] = [
   {
+    id: "menu-criollo",
+    title: "Menú Criollo",
+    items: [
+      { name: "Repollo frito", price: 12 },
+      { name: "Pollo estofado", price: 12 },
+      { name: "Pescado frito", price: 12 },
+    ],
+  },
+  {
+    id: "menu-ejecutivo",
+    title: "Menú Ejecutivo",
+    items: [
+      { name: "Lomo saltado", price: 15, description: "Trozos de lomo fino arrebozado con frescas verduras + papas fritas + arroz" },
+      { name: "Tallarín saltado", price: 15, description: "Pasta de tallarines + trozos de carne + especias orientales y criollas" },
+      { name: "Milanesa", price: 14, description: "Arroz + papas fritas crocantes + milanesa + ensalada" },
+      { name: "Pollo a la plancha", price: 15, description: "Filete de pechuga + papas fritas crocantes + ensalada + cremas + arroz" },
+      { name: "Saltado de pollo", price: 15, description: "Trozos de pechuga arrebozado con frescas verduras + papas fritas + arroz" },
+    ],
+  },
+  {
     id: "carta",
     title: "Carta",
     items: [
-      { name: "Lomo saltado", price: 25, description: "Trozos de lomo fino arrebozado con frescas verduras + papas fritas + arroz" },
-      { name: "Tallarín saltado", price: 20, description: "Pasta de tallarines + trozos de carne + especias orientales y criollas" },
-      { name: "Pollo a la plancha", price: 18, description: "Filete de pechuga + papas fritas crocantes + ensalada + cremas + arroz" },
+      { name: "Lomo saltado", price: 20, description: "Trozos de lomo fino arrebozado con frescas verduras + papas fritas + arroz" },
+      { name: "Churrasco", price: 22, description: "Arroz + papas fritas + suave corte de res + ensalada" },
       { name: "Saltado de pollo", price: 18, description: "Trozos de pechuga arrebozado con frescas verduras + papas fritas + arroz" },
-      { name: "Chaufa de pollo", price: 17, description: "Arroz + huevo + trozos de pollo + especias orientales + wantán" },
+      { name: "Pollo a la plancha", price: 18, description: "Filete de pechuga + papas fritas crocantes + ensalada + cremas + arroz" },
+      { name: "Chicharrón de pollo", price: 20, description: "Arroz + papas fritas + trozos de pollo + ensalada" },
+      { name: "Milanesa", price: 18, description: "Arroz + papas fritas crocantes + milanesa + ensalada" },
       { name: "Chaufa de carne", price: 19, description: "Arroz + huevo + trozos de carne + especias orientales + wantán" },
-      { name: "Mollejitas al ajo", price: 15, description: "Mollejitas + yuquitas sancochadas + zarza criolla" },
-      { name: "Mollejitas al sillao", price: 15, description: "Mollejitas + yuquitas sancochadas + zarza criolla" },
+      { name: "Tortilla de pollo", price: 17, description: "Arroz + yuquitas fritas + zarza criolla + tortilla" },
+      { name: "Pescado frito", price: 20, description: "Arroz + yuca + filete de pescado + salsa criolla" },
+      { name: "Tallarín saltado", price: 20, description: "Pasta de tallarines + trozos de carne + especias orientales y criollas" },
+      { name: "Chaufa de pollo", price: 17, description: "Arroz + huevo + trozos de pollo + especias orientales + wantán" },
+      { name: "Tortilla de huevo", price: 15, description: "Arroz + yuquitas fritas + zarza criolla + tortilla" },
     ],
   },
+  // Oculto (no está en bookPages), reactivar agregando su id a bookPages
   {
     id: "alitas",
     title: "Alitas",
@@ -41,6 +66,7 @@ export const menu: MenuCategory[] = [
       { name: "Alitas broaster", price: 18, description: "5 piezas de alitas + papas fritas + cremas + ensalada" },
     ],
   },
+  // Oculto
   {
     id: "parrillas",
     title: "Parrillas",
@@ -62,7 +88,6 @@ export const menu: MenuCategory[] = [
     items: [
       { name: "Limonada helada", variants: [v("Vaso", 4), v("1 litro", 12)] },
       { name: "Limonada frozen", variants: [v("Vaso", 4), v("1 litro", 12)] },
-      { name: "Limonada blue", variants: [v("Vaso", 4), v("1 litro", 12)] },
       { name: "Limonada cherry", variants: [v("Vaso", 4), v("1 litro", 12)] },
       { name: "Chicha morada", variants: [v("Vaso", 4), v("1 litro", 15)] },
     ],
@@ -79,6 +104,7 @@ export const menu: MenuCategory[] = [
       { name: "Agua San Luis", price: 2.5 },
     ],
   },
+  // Oculto
   {
     id: "cafes",
     title: "Cafés",
@@ -94,7 +120,6 @@ export const menu: MenuCategory[] = [
     title: "Adicionales",
     items: [
       { name: "Arroz blanco (porción)", price: 3 },
-      { name: "Arroz chaufa (porción)", price: 5 },
       { name: "Papas fritas (porción)", price: 8 },
       { name: "Ensaladas (porción)", price: 6 },
       { name: "Plátano frito (porción)", price: 3 },
@@ -105,11 +130,10 @@ export const menu: MenuCategory[] = [
 
 export const formatPrice = (n: number) => n.toFixed(2);
 
-
-/** Category ids grouped per book page (mirrors the printed menu). */
+/** Category ids grouped per book page. Categories not listed here (alitas, parrillas, cafes) are hidden but kept in `menu`. */
 export const bookPages: string[][] = [
+  ["menu-criollo", "menu-ejecutivo"],
   ["carta"],
-  ["alitas", "parrillas"],
   ["bebidas", "gaseosas"],
-  ["cafes", "adicionales"],
+  ["adicionales"],
 ];
