@@ -9,7 +9,7 @@
       {
         "nombre": "Lomo saltado",
         "descripcion": "Trozos de lomo fino arrebozado con frescas verduras + papas fritas + arroz",
-        "precio": 25
+        "precio": 22
       },
       {
         "nombre": "Tallarín saltado",
@@ -38,7 +38,7 @@
       },
       {
         "nombre": "Mollejitas al ajo",
-        "descripcion": "Mollejitas + papas fritas + zarza criolla",
+        "descripcion": "Mollejitas + yuquitas sancochadas + zarza criolla",
         "precio": 15
       },
       {
@@ -222,7 +222,7 @@
       {
         "nombre": "3 litros (solo Inca Kola)",
         "descripcion": "",
-        "precio": 12
+        "precio": 15
       },
       {
         "nombre": "Gordita",
