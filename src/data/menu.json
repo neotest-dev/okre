@@ -1,6 +1,35 @@
 [
   {
-    "titulo": "Carta",
+    "titulo": "Menú Criollo",
+    "pagina": 1,
+    "oculta": false,
+    "subtitulo": "",
+    "columnas": [],
+    "platos": [
+      {
+        "nombre": "Pollo al horno",
+        "descripcion": "Con papa sancochada",
+        "precio": 12
+      },
+      {
+        "nombre": "Pollada",
+        "descripcion": "",
+        "precio": 12
+      },
+      {
+        "nombre": "Arroz con pollo",
+        "descripcion": "",
+        "precio": 12
+      },
+      {
+        "nombre": "Cau cau",
+        "descripcion": "",
+        "precio": 12
+      }
+    ]
+  },
+  {
+    "titulo": "Menú Ejecutivo",
     "pagina": 1,
     "oculta": false,
     "subtitulo": "",
@@ -9,17 +38,51 @@
       {
         "nombre": "Lomo saltado",
         "descripcion": "Trozos de lomo fino arrebozado con frescas verduras + papas fritas + arroz",
-        "precio": 22
+        "precio": 15
       },
       {
         "nombre": "Tallarín saltado",
         "descripcion": "Pasta de tallarines + trozos de carne + especias orientales y criollas",
-        "precio": 20
+        "precio": 15
+      },
+      {
+        "nombre": "Milanesa",
+        "descripcion": "Arroz + papas fritas crocantes + milanesa + ensalada",
+        "precio": 15
       },
       {
         "nombre": "Pollo a la plancha",
         "descripcion": "Filete de pechuga + papas fritas crocantes + ensalada + cremas + arroz",
-        "precio": 18
+        "precio": 15
+      },
+      {
+        "nombre": "Saltado de pollo",
+        "descripcion": "Trozos de pechuga arrebozado con frescas verduras + papas fritas + arroz",
+        "precio": 14
+      },
+      {
+        "nombre": "Alitas (BBQ, maracuyá, acevichada)",
+        "descripcion": "Arroz + papas fritas + 3 piezas de alitas + ensalada",
+        "precio": 14
+      },
+      {
+        "nombre": "Churrasco",
+        "descripcion": "Arroz + papas fritas + churrasco + ensalada",
+        "precio": 16
+      }
+    ]
+  },
+  {
+    "titulo": "Carta",
+    "pagina": 2,
+    "oculta": false,
+    "subtitulo": "",
+    "columnas": [],
+    "platos": [
+      {
+        "nombre": "Lomo saltado",
+        "descripcion": "Trozos de lomo fino arrebozado con frescas verduras + papas fritas + arroz",
+        "precio": 25
       },
       {
         "nombre": "Saltado de pollo",
@@ -27,102 +90,50 @@
         "precio": 18
       },
       {
+        "nombre": "Pollo a la plancha",
+        "descripcion": "Filete de pechuga + papas fritas crocantes + ensalada + cremas + arroz",
+        "precio": 18
+      },
+      {
+        "nombre": "Chicharrón de pollo",
+        "descripcion": "Arroz + papas fritas + trozos de pollo + ensalada",
+        "precio": 20
+      },
+      {
+        "nombre": "Milanesa",
+        "descripcion": "Arroz + papas fritas crocantes + milanesa + ensalada",
+        "precio": 18
+      },
+      {
+        "nombre": "Tortilla de pollo",
+        "descripcion": "Arroz + papas fritas + zarza criolla + tortilla",
+        "precio": 17
+      },
+      {
+        "nombre": "Tallarín saltado",
+        "descripcion": "Pasta de tallarines + trozos de carne + especias orientales y criollas",
+        "precio": 20
+      },
+      {
         "nombre": "Chaufa de pollo",
         "descripcion": "Arroz + huevo + trozos de pollo + especias orientales + wantán",
         "precio": 17
       },
       {
-        "nombre": "Chaufa de carne",
-        "descripcion": "Arroz + huevo + trozos de carne + especias orientales + wantán",
-        "precio": 19
-      },
-      {
-        "nombre": "Mollejitas al ajo",
-        "descripcion": "Mollejitas + yuquitas sancochadas + zarza criolla",
+        "nombre": "Tortilla de huevo",
+        "descripcion": "Arroz + yuquitas fritas + zarza criolla + tortilla",
         "precio": 15
       },
       {
-        "nombre": "Mollejitas al sillao",
-        "descripcion": "Mollejitas + papas fritas + zarza criolla",
-        "precio": 15
-      }
-    ]
-  },
-  {
-    "titulo": "Alitas",
-    "pagina": 1,
-    "oculta": false,
-    "subtitulo": "",
-    "columnas": [],
-    "platos": [
-      {
-        "nombre": "Alitas BBQ",
-        "descripcion": "5 piezas de alitas + papas fritas + cremas",
+        "nombre": "Alitas (BBQ, acevichadas y maracuyá)",
+        "descripcion": "Papas fritas + 5 piezas de alitas + ensalada",
         "precio": 17
-      },
-      {
-        "nombre": "Alitas acevichadas",
-        "descripcion": "5 piezas de alitas + papas fritas + cremas",
-        "precio": 17
-      },
-      {
-        "nombre": "Alitas a la maracuyá",
-        "descripcion": "5 piezas de alitas + papas fritas + cremas",
-        "precio": 17
-      },
-      {
-        "nombre": "Combo de alitas",
-        "descripcion": "10 piezas de alitas + papas fritas + cremas + porción de chaufa",
-        "precio": 36
-      },
-      {
-        "nombre": "Alitas broaster",
-        "descripcion": "5 piezas de alitas + papas fritas + cremas + ensalada",
-        "precio": 18
-      }
-    ]
-  },
-  {
-    "titulo": "Parrillas",
-    "pagina": 2,
-    "oculta": false,
-    "subtitulo": "",
-    "columnas": [],
-    "platos": [
-      {
-        "nombre": "Churrasco de res",
-        "descripcion": "Corte de 400gr + papas fritas + ensalada + cremas",
-        "precio": 35
-      },
-      {
-        "nombre": "Pollo a la parrilla (pierna)",
-        "descripcion": "1/4 de pollo + papas fritas + ensalada + cremas",
-        "precio": 22
-      },
-      {
-        "nombre": "Pollo a la parrilla (pechuga)",
-        "descripcion": "1/4 de pollo + papas fritas + ensalada + cremas",
-        "precio": 25
-      },
-      {
-        "nombre": "Pollo al cilindro",
-        "descripcion": "Papas fritas + ensalada + pollo + cremas",
-        "variantes": [
-          {
-            "etiqueta": "1/8",
-            "precio": 12
-          },
-          {
-            "etiqueta": "1/4",
-            "precio": 22
-          }
-        ]
       }
     ]
   },
   {
     "titulo": "Bebidas",
-    "pagina": 2,
+    "pagina": 3,
     "oculta": false,
     "subtitulo": "",
     "columnas": [
@@ -159,7 +170,7 @@
         ]
       },
       {
-        "nombre": "Limonada blue berry",
+        "nombre": "Limonada cherry",
         "descripcion": "",
         "variantes": [
           {
@@ -173,7 +184,7 @@
         ]
       },
       {
-        "nombre": "Limonada cherry",
+        "nombre": "Limonada blue berry",
         "descripcion": "",
         "variantes": [
           {
@@ -204,7 +215,7 @@
   },
   {
     "titulo": "Gaseosas",
-    "pagina": 2,
+    "pagina": 3,
     "oculta": false,
     "subtitulo": "Inca Kola / Coca Cola",
     "columnas": [],
@@ -217,51 +228,27 @@
       {
         "nombre": "1 litro",
         "descripcion": "",
-        "precio": 6
+        "precio": 8
+      },
+      {
+        "nombre": "1.5 litros",
+        "descripcion": "",
+        "precio": 10
       },
       {
         "nombre": "3 litros (solo Inca Kola)",
         "descripcion": "",
-        "precio": 15
+        "precio": 18
       },
       {
         "nombre": "Gordita",
         "descripcion": "",
-        "precio": 5
+        "precio": 6
       },
       {
         "nombre": "Agua San Luis",
         "descripcion": "",
-        "precio": 2.5
-      }
-    ]
-  },
-  {
-    "titulo": "Cafés",
-    "pagina": 3,
-    "oculta": false,
-    "subtitulo": "",
-    "columnas": [],
-    "platos": [
-      {
-        "nombre": "Espresso",
-        "descripcion": "Café puro, intenso y con mucho carácter",
-        "precio": 6
-      },
-      {
-        "nombre": "Americano",
-        "descripcion": "Espresso con agua caliente, más suave, pero igual de delicioso",
-        "precio": 8
-      },
-      {
-        "nombre": "Cappuccino",
-        "descripcion": "Equilibrio perfecto entre espresso, leche caliente y espuma de leche",
-        "precio": 10
-      },
-      {
-        "nombre": "Frapuccino",
-        "descripcion": "Vaso de café, mezclado con hielo coronado con crema batida",
-        "precio": 12
+        "precio": 3
       }
     ]
   },
@@ -275,169 +262,32 @@
       {
         "nombre": "Arroz blanco (porción)",
         "descripcion": "",
-        "precio": 3
+        "precio": 4
       },
       {
         "nombre": "Arroz chaufa (porción)",
         "descripcion": "",
-        "precio": 5
+        "precio": 6
       },
       {
         "nombre": "Papas fritas (porción)",
         "descripcion": "",
-        "precio": 8
+        "precio": 13
       },
       {
         "nombre": "Ensaladas (porción)",
         "descripcion": "",
-        "precio": 6
+        "precio": 12
       },
       {
         "nombre": "Plátano frito (porción)",
         "descripcion": "",
-        "precio": 3
+        "precio": 4
       },
       {
         "nombre": "Huevo frito",
         "descripcion": "",
-        "precio": 1.5
-      }
-    ]
-  },
-  {
-    "titulo": "Menú Criollo",
-    "pagina": 1,
-    "oculta": true,
-    "subtitulo": "",
-    "columnas": [],
-    "platos": [
-      {
-        "nombre": "Brócoli saltado (con pollo)",
-        "descripcion": "",
-        "precio": 12
-      },
-      {
-        "nombre": "Cabrito con yuca",
-        "descripcion": "",
-        "precio": 12
-      },
-      {
-        "nombre": "Pescado frito",
-        "descripcion": "",
-        "precio": 12
-      },
-      {
-        "nombre": "Pollo frito con menestra",
-        "descripcion": "",
-        "precio": 12
-      }
-    ]
-  },
-  {
-    "titulo": "Menú Ejecutivo",
-    "pagina": 1,
-    "oculta": true,
-    "subtitulo": "Incluye vaso de refresco (manzana)",
-    "columnas": [],
-    "platos": [
-      {
-        "nombre": "Lomo saltado",
-        "descripcion": "Trozos de lomo fino arrebozado con frescas verduras + papas fritas + arroz",
-        "precio": 15
-      },
-      {
-        "nombre": "Tallarín saltado",
-        "descripcion": "Pasta de tallarines + trozos de carne + especias orientales y criollas",
-        "precio": 15
-      },
-      {
-        "nombre": "Milanesa",
-        "descripcion": "Arroz + papas fritas crocantes + milanesa + ensalada",
-        "precio": 15
-      },
-      {
-        "nombre": "Pollo a la plancha",
-        "descripcion": "Filete de pechuga + papas fritas crocantes + ensalada + cremas + arroz",
-        "precio": 15
-      },
-      {
-        "nombre": "Saltado de pollo",
-        "descripcion": "Trozos de pechuga arrebozado con frescas verduras + papas fritas + arroz",
-        "precio": 14
-      },
-      {
-        "nombre": "Alitas (BBQ, maracuyá, acevichada)",
-        "descripcion": "Arroz + papas fritas + 3 piezas de alitas + ensalada",
-        "precio": 14
-      },
-      {
-        "nombre": "Churrasco",
-        "descripcion": "Arroz + papas fritas + churrasco + ensalada",
-        "precio": 15
-      }
-    ]
-  },
-  {
-    "titulo": "Carta (Almuerzo)",
-    "pagina": 2,
-    "oculta": true,
-    "subtitulo": "",
-    "columnas": [],
-    "platos": [
-      {
-        "nombre": "Lomo saltado",
-        "descripcion": "Trozos de lomo fino arrebozado con frescas verduras + papas fritas + arroz",
-        "precio": 15
-      },
-      {
-        "nombre": "Brócoli saltado (con carne)",
-        "descripcion": "Arroz + papas fritas + zarza criolla",
-        "precio": 15
-      },
-      {
-        "nombre": "Saltado de pollo",
-        "descripcion": "Trozos de pechuga arrebozado con frescas verduras + papas fritas + arroz",
-        "precio": 18
-      },
-      {
-        "nombre": "Pollo a la plancha",
-        "descripcion": "Filete de pechuga + papas fritas crocantes + ensalada + cremas + arroz",
-        "precio": 18
-      },
-      {
-        "nombre": "Chicharrón de pollo",
-        "descripcion": "Arroz + papas fritas + trozos de pollo + ensalada",
-        "precio": 20
-      },
-      {
-        "nombre": "Milanesa",
-        "descripcion": "Arroz + papas fritas crocantes + milanesa + ensalada",
-        "precio": 18
-      },
-      {
-        "nombre": "Tortilla de pollo",
-        "descripcion": "Arroz + yuquitas fritas + zarza criolla + tortilla",
-        "precio": 17
-      },
-      {
-        "nombre": "Tallarín saltado",
-        "descripcion": "Pasta de tallarines + trozos de carne + especias orientales y criollas",
-        "precio": 20
-      },
-      {
-        "nombre": "Chaufa de pollo",
-        "descripcion": "Arroz + huevo + trozos de pollo + especias orientales + wantán",
-        "precio": 17
-      },
-      {
-        "nombre": "Tortilla de huevo",
-        "descripcion": "Arroz + yuquitas fritas + zarza criolla + tortilla",
-        "precio": 15
-      },
-      {
-        "nombre": "Alitas (BBQ, acevichadas y maracuyá)",
-        "descripcion": "Papas fritas + 5 piezas de alitas + ensalada",
-        "precio": 17
+        "precio": 2
       }
     ]
   }
