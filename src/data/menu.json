@@ -42,6 +42,24 @@
         "precio": 20
       },
       {
+        "nombre": "Pollo broaster",
+        "descripcion": "Arroz + papas fritas + pollo + ensalada",
+        "variantes": [
+          {
+            "etiqueta": "1/8",
+            "precio": 13
+          },
+          {
+            "etiqueta": "1/4 Pierna",
+            "precio": 19
+          },
+          {
+            "etiqueta": "1/4 Pecho",
+            "precio": 22
+          }
+        ]
+      },
+      {
         "nombre": "Mollejitas al ajo / sillao",
         "descripcion": "Yucas / papas fritas + mollejitas + zarza criolla",
         "variantes": [
