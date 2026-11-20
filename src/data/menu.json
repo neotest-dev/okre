@@ -1,8 +1,331 @@
 [
   {
-    "titulo": "Menú Criollo",
+    "titulo": "Carta",
     "pagina": 1,
     "oculta": false,
+    "subtitulo": "",
+    "columnas": [],
+    "platos": [
+      {
+        "nombre": "Lomo saltado",
+        "descripcion": "Trozos de lomo fino arrebozado con frescas verduras + papas fritas + arroz",
+        "precio": 25
+      },
+      {
+        "nombre": "Tallarín saltado",
+        "descripcion": "Pasta de tallarines + trozos de carne + especias orientales y criollas",
+        "precio": 20
+      },
+      {
+        "nombre": "Pollo a la plancha",
+        "descripcion": "Filete de pechuga + papas fritas crocantes + ensalada + cremas + arroz",
+        "precio": 18
+      },
+      {
+        "nombre": "Saltado de pollo",
+        "descripcion": "Trozos de pechuga arrebozado con frescas verduras + papas fritas + arroz",
+        "precio": 18
+      },
+      {
+        "nombre": "Chaufa de pollo",
+        "descripcion": "Arroz + huevo + trozos de pollo + especias orientales + wantán",
+        "precio": 17
+      },
+      {
+        "nombre": "Chaufa de carne",
+        "descripcion": "Arroz + huevo + trozos de carne + especias orientales + wantán",
+        "precio": 19
+      },
+      {
+        "nombre": "Chicharrón de pollo",
+        "descripcion": "Arroz + papas fritas + trozos de pollo + ensalada",
+        "precio": 20
+      },
+      {
+        "nombre": "Mollejitas al ajo / sillao",
+        "descripcion": "Yucas / papas fritas + mollejitas + zarza criolla",
+        "variantes": [
+          {
+            "etiqueta": "Personal (330 g)",
+            "precio": 18
+          },
+          {
+            "etiqueta": "Media fuente (500 g)",
+            "precio": 35
+          },
+          {
+            "etiqueta": "Una fuente (1000 g)",
+            "precio": 75
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "titulo": "Alitas",
+    "pagina": 1,
+    "oculta": false,
+    "subtitulo": "",
+    "columnas": [],
+    "platos": [
+      {
+        "nombre": "Alitas BBQ",
+        "descripcion": "5 piezas de alitas + papas fritas + cremas",
+        "precio": 17
+      },
+      {
+        "nombre": "Alitas acevichadas",
+        "descripcion": "5 piezas de alitas + papas fritas + cremas",
+        "precio": 17
+      },
+      {
+        "nombre": "Alitas a la maracuyá",
+        "descripcion": "5 piezas de alitas + papas fritas + cremas",
+        "precio": 17
+      },
+      {
+        "nombre": "Combo de alitas",
+        "descripcion": "10 piezas de alitas + papas fritas + cremas + porción de chaufa",
+        "precio": 36
+      },
+      {
+        "nombre": "Alitas broaster",
+        "descripcion": "5 piezas de alitas + papas fritas + cremas + ensalada",
+        "precio": 18
+      }
+    ]
+  },
+  {
+    "titulo": "Parrillas",
+    "pagina": 2,
+    "oculta": false,
+    "subtitulo": "",
+    "columnas": [],
+    "platos": [
+      {
+        "nombre": "Churrasco de res",
+        "descripcion": "Corte de 400gr + papas fritas + ensalada + cremas",
+        "precio": 35
+      },
+      {
+        "nombre": "Pollo a la parrilla (pierna)",
+        "descripcion": "1/4 de pollo + papas fritas + ensalada + cremas",
+        "precio": 22
+      },
+      {
+        "nombre": "Pollo a la parrilla (pechuga)",
+        "descripcion": "1/4 de pollo + papas fritas + ensalada + cremas",
+        "precio": 25
+      },
+      {
+        "nombre": "Pollo al cilindro",
+        "descripcion": "Papas fritas + ensalada + pollo + cremas",
+        "variantes": [
+          {
+            "etiqueta": "1/8",
+            "precio": 12
+          },
+          {
+            "etiqueta": "1/4",
+            "precio": 22
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "titulo": "Bebidas",
+    "pagina": 2,
+    "oculta": false,
+    "subtitulo": "",
+    "columnas": [
+      "Vaso",
+      "1 litro"
+    ],
+    "platos": [
+      {
+        "nombre": "Limonada helada",
+        "descripcion": "",
+        "variantes": [
+          {
+            "etiqueta": "Vaso",
+            "precio": 4
+          },
+          {
+            "etiqueta": "1 litro",
+            "precio": 12
+          }
+        ]
+      },
+      {
+        "nombre": "Limonada frozen",
+        "descripcion": "",
+        "variantes": [
+          {
+            "etiqueta": "Vaso",
+            "precio": 4
+          },
+          {
+            "etiqueta": "1 litro",
+            "precio": 12
+          }
+        ]
+      },
+      {
+        "nombre": "Limonada blue berry",
+        "descripcion": "",
+        "variantes": [
+          {
+            "etiqueta": "Vaso",
+            "precio": 4
+          },
+          {
+            "etiqueta": "1 litro",
+            "precio": 12
+          }
+        ]
+      },
+      {
+        "nombre": "Limonada cherry",
+        "descripcion": "",
+        "variantes": [
+          {
+            "etiqueta": "Vaso",
+            "precio": 4
+          },
+          {
+            "etiqueta": "1 litro",
+            "precio": 12
+          }
+        ]
+      },
+      {
+        "nombre": "Chicha morada",
+        "descripcion": "",
+        "variantes": [
+          {
+            "etiqueta": "Vaso",
+            "precio": 4
+          },
+          {
+            "etiqueta": "1 litro",
+            "precio": 15
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "titulo": "Gaseosas",
+    "pagina": 2,
+    "oculta": false,
+    "subtitulo": "Inca Kola / Coca Cola",
+    "columnas": [],
+    "platos": [
+      {
+        "nombre": "Personal",
+        "descripcion": "",
+        "precio": 4
+      },
+      {
+        "nombre": "1 litro",
+        "descripcion": "",
+        "precio": 8
+      },
+      {
+        "nombre": "1.5 litros",
+        "descripcion": "",
+        "precio": 10
+      },
+      {
+        "nombre": "3 litros (solo Inca Kola)",
+        "descripcion": "",
+        "precio": 18
+      },
+      {
+        "nombre": "Gordita",
+        "descripcion": "",
+        "precio": 6
+      },
+      {
+        "nombre": "Agua San Luis",
+        "descripcion": "",
+        "precio": 3
+      }
+    ]
+  },
+  {
+    "titulo": "Cafés",
+    "pagina": 3,
+    "oculta": false,
+    "subtitulo": "",
+    "columnas": [],
+    "platos": [
+      {
+        "nombre": "Espresso",
+        "descripcion": "Café puro, intenso y con mucho carácter",
+        "precio": 6
+      },
+      {
+        "nombre": "Americano",
+        "descripcion": "Espresso con agua caliente, más suave, pero igual de delicioso",
+        "precio": 8
+      },
+      {
+        "nombre": "Cappuccino",
+        "descripcion": "Equilibrio perfecto entre espresso, leche caliente y espuma de leche",
+        "precio": 10
+      },
+      {
+        "nombre": "Frapuccino",
+        "descripcion": "Vaso de café, mezclado con hielo coronado con crema batida",
+        "precio": 12
+      }
+    ]
+  },
+  {
+    "titulo": "Adicionales",
+    "pagina": 3,
+    "oculta": false,
+    "subtitulo": "",
+    "columnas": [],
+    "platos": [
+      {
+        "nombre": "Arroz blanco (porción)",
+        "descripcion": "",
+        "precio": 4
+      },
+      {
+        "nombre": "Arroz chaufa (porción)",
+        "descripcion": "",
+        "precio": 6
+      },
+      {
+        "nombre": "Papas fritas (porción)",
+        "descripcion": "",
+        "precio": 13
+      },
+      {
+        "nombre": "Ensalada (porción)",
+        "descripcion": "",
+        "precio": 12
+      },
+      {
+        "nombre": "Plátano frito (porción)",
+        "descripcion": "",
+        "precio": 4
+      },
+      {
+        "nombre": "Huevo frito",
+        "descripcion": "",
+        "precio": 2
+      }
+    ]
+  },
+  {
+    "titulo": "Menú Criollo",
+    "pagina": 1,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -31,7 +354,7 @@
   {
     "titulo": "Menú Ejecutivo",
     "pagina": 1,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -73,9 +396,9 @@
     ]
   },
   {
-    "titulo": "Carta",
+    "titulo": "Carta (Almuerzo)",
     "pagina": 2,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -128,166 +451,6 @@
         "nombre": "Alitas (BBQ, acevichadas y maracuyá)",
         "descripcion": "Papas fritas + 5 piezas de alitas + ensalada",
         "precio": 17
-      }
-    ]
-  },
-  {
-    "titulo": "Bebidas",
-    "pagina": 3,
-    "oculta": false,
-    "subtitulo": "",
-    "columnas": [
-      "Vaso",
-      "1 litro"
-    ],
-    "platos": [
-      {
-        "nombre": "Limonada helada",
-        "descripcion": "",
-        "variantes": [
-          {
-            "etiqueta": "Vaso",
-            "precio": 4
-          },
-          {
-            "etiqueta": "1 litro",
-            "precio": 12
-          }
-        ]
-      },
-      {
-        "nombre": "Limonada frozen",
-        "descripcion": "",
-        "variantes": [
-          {
-            "etiqueta": "Vaso",
-            "precio": 4
-          },
-          {
-            "etiqueta": "1 litro",
-            "precio": 12
-          }
-        ]
-      },
-      {
-        "nombre": "Limonada cherry",
-        "descripcion": "",
-        "variantes": [
-          {
-            "etiqueta": "Vaso",
-            "precio": 4
-          },
-          {
-            "etiqueta": "1 litro",
-            "precio": 12
-          }
-        ]
-      },
-      {
-        "nombre": "Limonada blue berry",
-        "descripcion": "",
-        "variantes": [
-          {
-            "etiqueta": "Vaso",
-            "precio": 4
-          },
-          {
-            "etiqueta": "1 litro",
-            "precio": 12
-          }
-        ]
-      },
-      {
-        "nombre": "Chicha morada",
-        "descripcion": "",
-        "variantes": [
-          {
-            "etiqueta": "Vaso",
-            "precio": 4
-          },
-          {
-            "etiqueta": "1 litro",
-            "precio": 15
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "titulo": "Gaseosas",
-    "pagina": 3,
-    "oculta": false,
-    "subtitulo": "Inca Kola / Coca Cola",
-    "columnas": [],
-    "platos": [
-      {
-        "nombre": "Personal",
-        "descripcion": "",
-        "precio": 4
-      },
-      {
-        "nombre": "1 litro",
-        "descripcion": "",
-        "precio": 8
-      },
-      {
-        "nombre": "1.5 litros",
-        "descripcion": "",
-        "precio": 10
-      },
-      {
-        "nombre": "3 litros (solo Inca Kola)",
-        "descripcion": "",
-        "precio": 18
-      },
-      {
-        "nombre": "Gordita",
-        "descripcion": "",
-        "precio": 6
-      },
-      {
-        "nombre": "Agua San Luis",
-        "descripcion": "",
-        "precio": 3
-      }
-    ]
-  },
-  {
-    "titulo": "Adicionales",
-    "pagina": 3,
-    "oculta": false,
-    "subtitulo": "",
-    "columnas": [],
-    "platos": [
-      {
-        "nombre": "Arroz blanco (porción)",
-        "descripcion": "",
-        "precio": 4
-      },
-      {
-        "nombre": "Arroz chaufa (porción)",
-        "descripcion": "",
-        "precio": 6
-      },
-      {
-        "nombre": "Papas fritas (porción)",
-        "descripcion": "",
-        "precio": 13
-      },
-      {
-        "nombre": "Ensaladas (porción)",
-        "descripcion": "",
-        "precio": 12
-      },
-      {
-        "nombre": "Plátano frito (porción)",
-        "descripcion": "",
-        "precio": 4
-      },
-      {
-        "nombre": "Huevo frito",
-        "descripcion": "",
-        "precio": 2
       }
     ]
   }
