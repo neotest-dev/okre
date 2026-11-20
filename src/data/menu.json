@@ -348,22 +348,22 @@
     "columnas": [],
     "platos": [
       {
-        "nombre": "Pollo al horno",
-        "descripcion": "Con papa sancochada",
-        "precio": 12
-      },
-      {
-        "nombre": "Pollada",
+        "nombre": "Seco de carne",
         "descripcion": "",
         "precio": 12
       },
       {
-        "nombre": "Arroz con pollo",
+        "nombre": "Pollo frito",
         "descripcion": "",
         "precio": 12
       },
       {
-        "nombre": "Cau cau",
+        "nombre": "Escabeche de pollo",
+        "descripcion": "",
+        "precio": 12
+      },
+      {
+        "nombre": "Mollejitas guisadas",
         "descripcion": "",
         "precio": 12
       }
@@ -426,6 +426,11 @@
         "precio": 25
       },
       {
+        "nombre": "Brócoli saltado (con carne)",
+        "descripcion": "Arroz + papas fritas + zarza criolla",
+        "precio": 15
+      },
+      {
         "nombre": "Saltado de pollo",
         "descripcion": "Trozos de pechuga arrebozado con frescas verduras + papas fritas + arroz",
         "precio": 18
@@ -447,7 +452,7 @@
       },
       {
         "nombre": "Tortilla de pollo",
-        "descripcion": "Arroz + papas fritas + zarza criolla + tortilla",
+        "descripcion": "Arroz + yuquitas fritas + zarza criolla + tortilla",
         "precio": 17
       },
       {
