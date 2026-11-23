@@ -27,7 +27,7 @@ const slug = (s: string) =>
 
 export const menu: MenuCategory[] = (data as any[]).map((c) => ({
   id: slug(c.titulo),
-  title: c.titulo,
+  title: c.titulo === "Carta (Almuerzo)" ? "Carta" : c.titulo,
   subtitle: c.subtitulo || undefined,
   columns: c.columnas?.length ? c.columnas : undefined,
   page: Number(c.pagina) || 1,

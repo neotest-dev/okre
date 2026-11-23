@@ -2,7 +2,7 @@
   {
     "titulo": "Carta",
     "pagina": 1,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -82,7 +82,7 @@
   {
     "titulo": "Alitas",
     "pagina": 1,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -116,7 +116,7 @@
   {
     "titulo": "Parrillas",
     "pagina": 2,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -153,7 +153,7 @@
   },
   {
     "titulo": "Bebidas",
-    "pagina": 2,
+    "pagina": 3,
     "oculta": false,
     "subtitulo": "",
     "columnas": [
@@ -181,25 +181,11 @@
         "variantes": [
           {
             "etiqueta": "Vaso",
-            "precio": 4
+            "precio": 5
           },
           {
             "etiqueta": "1 litro",
-            "precio": 12
-          }
-        ]
-      },
-      {
-        "nombre": "Limonada blue berry",
-        "descripcion": "",
-        "variantes": [
-          {
-            "etiqueta": "Vaso",
-            "precio": 4
-          },
-          {
-            "etiqueta": "1 litro",
-            "precio": 12
+            "precio": 15
           }
         ]
       },
@@ -209,11 +195,25 @@
         "variantes": [
           {
             "etiqueta": "Vaso",
-            "precio": 4
+            "precio": 5
           },
           {
             "etiqueta": "1 litro",
-            "precio": 12
+            "precio": 15
+          }
+        ]
+      },
+      {
+        "nombre": "Limonada blue berry",
+        "descripcion": "",
+        "variantes": [
+          {
+            "etiqueta": "Vaso",
+            "precio": 5
+          },
+          {
+            "etiqueta": "1 litro",
+            "precio": 15
           }
         ]
       },
@@ -223,7 +223,7 @@
         "variantes": [
           {
             "etiqueta": "Vaso",
-            "precio": 4
+            "precio": 5
           },
           {
             "etiqueta": "1 litro",
@@ -235,7 +235,7 @@
   },
   {
     "titulo": "Gaseosas",
-    "pagina": 2,
+    "pagina": 3,
     "oculta": false,
     "subtitulo": "Inca Kola / Coca cola",
     "columnas": [],
@@ -256,11 +256,6 @@
         "precio": 10
       },
       {
-        "nombre": "3 litros (solo Inca Kola)",
-        "descripcion": "",
-        "precio": 18
-      },
-      {
         "nombre": "Gordita",
         "descripcion": "",
         "precio": 6
@@ -275,7 +270,7 @@
   {
     "titulo": "Cafés",
     "pagina": 3,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -343,23 +338,23 @@
   {
     "titulo": "Menú Criollo",
     "pagina": 1,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
       {
-        "nombre": "Cau cau",
+        "nombre": "Mondonguito a la italiana",
         "descripcion": "",
         "precio": 12
       },
       {
-        "nombre": "Pescado frito",
-        "descripcion": "Con frijol de cabrito",
+        "nombre": "Mollejitas guisadas",
+        "descripcion": "Con lentejita serrana",
         "precio": 12
       },
       {
         "nombre": "Pollo frito",
-        "descripcion": "Con frijol de cabrito",
+        "descripcion": "Con lentejita serrana",
         "precio": 12
       }
     ]
@@ -367,7 +362,7 @@
   {
     "titulo": "Menú Ejecutivo",
     "pagina": 1,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -411,7 +406,7 @@
   {
     "titulo": "Carta (Almuerzo)",
     "pagina": 2,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -419,11 +414,6 @@
         "nombre": "Lomo saltado",
         "descripcion": "Trozos de lomo fino arrebozado con frescas verduras + papas fritas + arroz",
         "precio": 25
-      },
-      {
-        "nombre": "Brócoli saltado (con carne)",
-        "descripcion": "Arroz + papas fritas + zarza criolla",
-        "precio": 15
       },
       {
         "nombre": "Saltado de pollo",
