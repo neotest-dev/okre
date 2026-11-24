@@ -256,7 +256,7 @@
   {
     "titulo": "Cafés",
     "pagina": 3,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
