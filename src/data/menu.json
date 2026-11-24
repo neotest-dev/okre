@@ -2,7 +2,7 @@
   {
     "titulo": "Carta",
     "pagina": 1,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -82,7 +82,7 @@
   {
     "titulo": "Alitas",
     "pagina": 1,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -116,7 +116,7 @@
   {
     "titulo": "Parrillas",
     "pagina": 2,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -139,7 +139,7 @@
   },
   {
     "titulo": "Bebidas",
-    "pagina": 2,
+    "pagina": 3,
     "oculta": false,
     "subtitulo": "",
     "columnas": [
@@ -221,7 +221,7 @@
   },
   {
     "titulo": "Gaseosas",
-    "pagina": 2,
+    "pagina": 3,
     "oculta": false,
     "subtitulo": "Inca Kola / Coca cola",
     "columnas": [],
@@ -256,7 +256,7 @@
   {
     "titulo": "Cafés",
     "pagina": 3,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -324,23 +324,28 @@
   {
     "titulo": "Menú Criollo",
     "pagina": 1,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
       {
-        "nombre": "Mondonguito a la italiana",
+        "nombre": "Pescado frito",
         "descripcion": "",
         "precio": 12
       },
       {
-        "nombre": "Mollejitas guisadas",
-        "descripcion": "Con lentejita serrana",
+        "nombre": "Pollo broaster",
+        "descripcion": "",
+        "precio": 12
+      },
+      {
+        "nombre": "Pollo guisado",
+        "descripcion": "Con arveja verde",
         "precio": 12
       },
       {
         "nombre": "Pollo frito",
-        "descripcion": "Con lentejita serrana",
+        "descripcion": "Con arveja verde",
         "precio": 12
       }
     ]
@@ -348,7 +353,7 @@
   {
     "titulo": "Menú Ejecutivo",
     "pagina": 1,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -392,7 +397,7 @@
   {
     "titulo": "Carta (Almuerzo)",
     "pagina": 2,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
