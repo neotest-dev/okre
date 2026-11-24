@@ -324,7 +324,7 @@
   {
     "titulo": "Menú Criollo",
     "pagina": 1,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -353,7 +353,7 @@
   {
     "titulo": "Menú Ejecutivo",
     "pagina": 1,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -397,7 +397,7 @@
   {
     "titulo": "Carta (Almuerzo)",
     "pagina": 2,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
