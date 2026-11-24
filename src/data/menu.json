@@ -116,7 +116,7 @@
   {
     "titulo": "Parrillas",
     "pagina": 2,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
