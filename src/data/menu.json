@@ -2,7 +2,7 @@
   {
     "titulo": "Carta",
     "pagina": 1,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -82,7 +82,7 @@
   {
     "titulo": "Alitas",
     "pagina": 1,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
