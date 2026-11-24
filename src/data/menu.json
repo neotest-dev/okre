@@ -134,20 +134,6 @@
         "nombre": "Pollo a la parrilla (pechuga)",
         "descripcion": "1/4 de pollo + papas fritas + ensalada + cremas",
         "precio": 25
-      },
-      {
-        "nombre": "Pollo al cilindro",
-        "descripcion": "Papas fritas + ensalada + pollo + cremas",
-        "variantes": [
-          {
-            "etiqueta": "1/8",
-            "precio": 12
-          },
-          {
-            "etiqueta": "1/4",
-            "precio": 22
-          }
-        ]
       }
     ]
   },
