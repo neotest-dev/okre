@@ -2,7 +2,7 @@
   {
     "titulo": "Carta",
     "pagina": 1,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -43,7 +43,7 @@
       },
       {
         "nombre": "Pollo broaster",
-        "descripcion": "Arroz + papas fritas + pollo + ensalada",
+        "descripcion": "Papas fritas + pollo + ensalada",
         "variantes": [
           {
             "etiqueta": "1/8 (pierna / pecho)",
@@ -82,7 +82,7 @@
   {
     "titulo": "Alitas",
     "pagina": 1,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -116,7 +116,7 @@
   {
     "titulo": "Parrillas",
     "pagina": 2,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -176,7 +176,7 @@
         ]
       },
       {
-        "nombre": "Limonada cherry",
+        "nombre": "Limonada blue berry",
         "descripcion": "",
         "variantes": [
           {
@@ -190,7 +190,7 @@
         ]
       },
       {
-        "nombre": "Limonada blue berry",
+        "nombre": "Limonada cherry",
         "descripcion": "",
         "variantes": [
           {
@@ -255,8 +255,8 @@
   },
   {
     "titulo": "Cafés",
-    "pagina": 2,
-    "oculta": true,
+    "pagina": 3,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -324,7 +324,7 @@
   {
     "titulo": "Menú Criollo",
     "pagina": 1,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -353,7 +353,7 @@
   {
     "titulo": "Menú Ejecutivo",
     "pagina": 1,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -402,7 +402,7 @@
   {
     "titulo": "Carta (Almuerzo)",
     "pagina": 2,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
