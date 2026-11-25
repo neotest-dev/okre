@@ -2,7 +2,7 @@
   {
     "titulo": "Carta",
     "pagina": 1,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -82,7 +82,7 @@
   {
     "titulo": "Alitas",
     "pagina": 1,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -116,7 +116,7 @@
   {
     "titulo": "Parrillas",
     "pagina": 2,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -139,7 +139,7 @@
   },
   {
     "titulo": "Bebidas",
-    "pagina": 3,
+    "pagina": 2,
     "oculta": false,
     "subtitulo": "",
     "columnas": [
@@ -256,7 +256,7 @@
   {
     "titulo": "Cafés",
     "pagina": 2,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -324,7 +324,7 @@
   {
     "titulo": "Menú Criollo",
     "pagina": 1,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -334,18 +334,18 @@
         "precio": 12
       },
       {
-        "nombre": "Pollo broaster",
+        "nombre": "Pollo estofado",
         "descripcion": "",
         "precio": 12
       },
       {
-        "nombre": "Pollo guisado",
-        "descripcion": "Con arveja verde",
+        "nombre": "Locrito",
+        "descripcion": "",
         "precio": 12
       },
       {
-        "nombre": "Pollo frito",
-        "descripcion": "Con arveja verde",
+        "nombre": "Seco de cabrito",
+        "descripcion": "Con arveja amarilla o yuca",
         "precio": 12
       }
     ]
@@ -353,7 +353,7 @@
   {
     "titulo": "Menú Ejecutivo",
     "pagina": 1,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -391,13 +391,18 @@
         "nombre": "Churrasco",
         "descripcion": "Arroz + papas fritas + churrasco + ensalada",
         "precio": 16
+      },
+      {
+        "nombre": "Pollo broaster",
+        "descripcion": "Arroz + papas fritas + pollo + ensalada",
+        "precio": 16
       }
     ]
   },
   {
     "titulo": "Carta (Almuerzo)",
     "pagina": 2,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
