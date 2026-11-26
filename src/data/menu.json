@@ -2,7 +2,7 @@
   {
     "titulo": "Carta",
     "pagina": 1,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -82,7 +82,7 @@
   {
     "titulo": "Alitas",
     "pagina": 1,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -116,7 +116,7 @@
   {
     "titulo": "Parrillas",
     "pagina": 2,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -139,7 +139,7 @@
   },
   {
     "titulo": "Bebidas",
-    "pagina": 2,
+    "pagina": 3,
     "oculta": false,
     "subtitulo": "",
     "columnas": [
@@ -256,7 +256,7 @@
   {
     "titulo": "Cafés",
     "pagina": 3,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -284,7 +284,7 @@
   },
   {
     "titulo": "Adicionales",
-    "pagina": 3,
+    "pagina": 4,
     "oculta": false,
     "subtitulo": "",
     "columnas": [],
@@ -318,34 +318,39 @@
         "nombre": "Huevo frito",
         "descripcion": "",
         "precio": 2
+      },
+      {
+        "nombre": "Sopa extra",
+        "descripcion": "",
+        "precio": 4
       }
     ]
   },
   {
     "titulo": "Menú Criollo",
     "pagina": 1,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
+      {
+        "nombre": "Pollo frito",
+        "descripcion": "Con frijol panamito",
+        "precio": 12
+      },
       {
         "nombre": "Pescado frito",
         "descripcion": "",
         "precio": 12
       },
       {
-        "nombre": "Pollo estofado",
+        "nombre": "Pollo asado",
         "descripcion": "",
         "precio": 12
       },
       {
-        "nombre": "Locrito",
+        "nombre": "Mollejitas estofadas",
         "descripcion": "",
-        "precio": 12
-      },
-      {
-        "nombre": "Seco de cabrito",
-        "descripcion": "Con arveja amarilla o yuca",
         "precio": 12
       }
     ]
@@ -353,7 +358,7 @@
   {
     "titulo": "Menú Ejecutivo",
     "pagina": 1,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -400,9 +405,9 @@
     ]
   },
   {
-    "titulo": "Carta (Almuerzo)",
+    "titulo": "Carta",
     "pagina": 2,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
