@@ -25,22 +25,30 @@ export interface MenuCategory {
 const slug = (s: string) =>
   s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
-export const menu: MenuCategory[] = (data as any[]).map((c) => ({
-  id: slug(c.titulo),
-  title: c.titulo === "Carta (Almuerzo)" ? "Carta" : c.titulo,
-  subtitle: c.subtitulo || undefined,
-  columns: c.columnas?.length ? c.columnas : undefined,
-  page: Number(c.pagina) || 1,
-  hidden: !!c.oculta,
-  items: c.platos.map((p: any) => ({
-    name: p.nombre,
-    description: p.descripcion || undefined,
-    price: p.precio === undefined || p.precio === null || p.precio === "" ? undefined : Number(p.precio),
-    variants: p.variantes?.length
-      ? p.variantes.map((x: any) => ({ label: x.etiqueta, price: Number(x.precio) }))
-      : undefined,
-  })),
-}));
+const ids = new Map<string, number>();
+
+export const menu: MenuCategory[] = (data as any[]).map((c) => {
+  const baseId = slug(c.titulo);
+  const count = (ids.get(baseId) ?? 0) + 1;
+  ids.set(baseId, count);
+
+  return {
+    id: count === 1 ? baseId : `${baseId}-${count}`,
+    title: c.titulo === "Carta (Almuerzo)" ? "Carta" : c.titulo,
+    subtitle: c.subtitulo || undefined,
+    columns: c.columnas?.length ? c.columnas : undefined,
+    page: Number(c.pagina) || 1,
+    hidden: !!c.oculta,
+    items: c.platos.map((p: any) => ({
+      name: p.nombre,
+      description: p.descripcion || undefined,
+      price: p.precio === undefined || p.precio === null || p.precio === "" ? undefined : Number(p.precio),
+      variants: p.variantes?.length
+        ? p.variantes.map((x: any) => ({ label: x.etiqueta, price: Number(x.precio) }))
+        : undefined,
+    })),
+  };
+});
 
 export const formatPrice = (n: number) => n.toFixed(2);
 
