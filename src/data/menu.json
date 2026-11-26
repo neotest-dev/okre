@@ -2,7 +2,7 @@
   {
     "titulo": "Carta",
     "pagina": 1,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -81,8 +81,8 @@
   },
   {
     "titulo": "Alitas",
-    "pagina": 1,
-    "oculta": true,
+    "pagina": 2,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -116,7 +116,7 @@
   {
     "titulo": "Parrillas",
     "pagina": 2,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -139,7 +139,7 @@
   },
   {
     "titulo": "Bebidas",
-    "pagina": 3,
+    "pagina": 2,
     "oculta": false,
     "subtitulo": "",
     "columnas": [
@@ -223,7 +223,7 @@
     "titulo": "Gaseosas",
     "pagina": 3,
     "oculta": false,
-    "subtitulo": "Inca Kola / Coca cola",
+    "subtitulo": "",
     "columnas": [],
     "platos": [
       {
@@ -255,8 +255,8 @@
   },
   {
     "titulo": "Cafés",
-    "pagina": 3,
-    "oculta": true,
+    "pagina": 4,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -318,18 +318,13 @@
         "nombre": "Huevo frito",
         "descripcion": "",
         "precio": 2
-      },
-      {
-        "nombre": "Sopa extra",
-        "descripcion": "",
-        "precio": 4
       }
     ]
   },
   {
     "titulo": "Menú Criollo",
     "pagina": 1,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -358,7 +353,7 @@
   {
     "titulo": "Menú Ejecutivo",
     "pagina": 1,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -407,7 +402,7 @@
   {
     "titulo": "Carta",
     "pagina": 2,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
