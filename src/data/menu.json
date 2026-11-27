@@ -318,6 +318,11 @@
         "nombre": "Huevo frito",
         "descripcion": "",
         "precio": 2
+      },
+      {
+        "nombre": "Sopa extra",
+        "descripcion": "",
+        "precio": 4
       }
     ]
   },
