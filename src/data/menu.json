@@ -2,7 +2,7 @@
   {
     "titulo": "Carta",
     "pagina": 1,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -82,7 +82,7 @@
   {
     "titulo": "Alitas",
     "pagina": 2,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -116,7 +116,7 @@
   {
     "titulo": "Parrillas",
     "pagina": 2,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -139,7 +139,7 @@
   },
   {
     "titulo": "Bebidas",
-    "pagina": 2,
+    "pagina": 3,
     "oculta": false,
     "subtitulo": "",
     "columnas": [
@@ -223,7 +223,7 @@
     "titulo": "Gaseosas",
     "pagina": 3,
     "oculta": false,
-    "subtitulo": "",
+    "subtitulo": "Inca Kola / Coca cola",
     "columnas": [],
     "platos": [
       {
@@ -256,7 +256,7 @@
   {
     "titulo": "Cafés",
     "pagina": 4,
-    "oculta": false,
+    "oculta": true,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -324,27 +324,27 @@
   {
     "titulo": "Menú Criollo",
     "pagina": 1,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
       {
-        "nombre": "Pollo frito",
-        "descripcion": "Con frijol panamito",
+        "nombre": "Arroz con pollo",
+        "descripcion": "",
         "precio": 12
       },
       {
         "nombre": "Pescado frito",
+        "descripcion": "Con lentejita serrana",
+        "precio": 12
+      },
+      {
+        "nombre": "Pollo al sillao",
         "descripcion": "",
         "precio": 12
       },
       {
-        "nombre": "Pollo asado",
-        "descripcion": "",
-        "precio": 12
-      },
-      {
-        "nombre": "Mollejitas estofadas",
+        "nombre": "Repollo saltado",
         "descripcion": "",
         "precio": 12
       }
@@ -353,7 +353,7 @@
   {
     "titulo": "Menú Ejecutivo",
     "pagina": 1,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
@@ -395,14 +395,14 @@
       {
         "nombre": "Pollo broaster",
         "descripcion": "Arroz + papas fritas + pollo + ensalada",
-        "precio": 16
+        "precio": 15
       }
     ]
   },
   {
     "titulo": "Carta",
     "pagina": 2,
-    "oculta": true,
+    "oculta": false,
     "subtitulo": "",
     "columnas": [],
     "platos": [
